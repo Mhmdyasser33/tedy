@@ -24,6 +24,8 @@ namespace WebApplication1.Controllers
             int a, b, c, t;
             a = hours; // number of hours
             b = 10;
+            c = 100000;
+            d = 1999;
 
             if (weekend == true) // weekend
             {
