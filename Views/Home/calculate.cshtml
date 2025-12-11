@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "calculate";
+}
+
+ <h4>Calculate Salary</h4>
+ <hr />
+ <div class="row">
+    <div class="col-md-4">
+        <form asp-action="calculate">
+            <div class="form-group">
+                Enter number of hours : <input name="hours" 
+class="form-control" />
+            </div>
+           
+            <div class="checkbox">
+                <label><input type="checkbox" value="false" 
+name="weekend" />Week End</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Calculate" class="btn btn
+default" />
+            </div>
+        </form>
+    </div>
+ </div>
+ <h2>@ViewData["Message"]</h2>
+

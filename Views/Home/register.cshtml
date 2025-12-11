@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "register";
+}
+
+<h4>customer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="register">
+            <div class="form-group">
+                Name: <input name="name" class="form-control" />
+            </div>
+            <div class="form-group">
+                age: <input name="age" class="form-control" />
+            </div>
+            <div class="form-group">
+                Education:<select class="form-control" name="education">
+                    <option value="HighSchool">high school</option>
+                    <option value="University">university</option>
+                </select>
+            </div>
+            <div class="checkbox">
+                <label> <input type="radio" name="gender" value="male" checked /> Male</label>
+            </div>
+            <div class="checkbox">
+                <label> <input type="radio" name="gender" value="female" />Female</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="married" value="true" />Married</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+<h2>@ViewData["Message"]</h2>
+
+
